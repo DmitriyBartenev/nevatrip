@@ -6,8 +6,8 @@
     font-family: 'Open Sans', sans-serif;
 }
 .card{
-    margin: 0 auto;
-    width:341px;
+    margin:0 auto;
+    width:342px;
     border:solid 0.3px #828282;
     border-radius: 16px;
     margin-top:30px;
@@ -63,8 +63,6 @@
     }
     &__discount{
         margin:0 auto;
-        width:317px;
-        height:40px;
         font-size:14px;
         font-weight: 600;
         line-height:22px;
@@ -76,7 +74,6 @@
             margin-left:13px;
             li{
                 list-style: none;
-                width:243px;
                 font-size:14px;
                 font-weight: 400;
                 color: #4B4B4B;
@@ -92,7 +89,6 @@
         ul{
             margin:0 auto;
             list-style: none;
-            width:317px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -120,12 +116,22 @@
             }
             button{
                 margin-top:10px;
-                background-color:#FFFFFF;
-                border:solid 0.5px #333333;
-                border-radius: 100%;
-                width:30px;
-                height:30px;
+                border:none;
+                background-color: #FFFFFF;
+                color:#333333;
+                font-size:14px;
+                width:63px;
+                height:24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 cursor: pointer;
+                background-color: #93beff;
+                border-radius: 11px;
+                transition: .2s;
+                &:hover{
+                    background-color: #D9E8FF;
+                }
             }
         }
     }
@@ -144,12 +150,12 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            :first-child{
+            .price{
                 color:#000000;
                 line-height: 20px;
                 font-size:30px;
             }
-            :last-child{
+            .extra_price{
                 font-size:10px;
                 color:#000000;
                 line-height: 20px;

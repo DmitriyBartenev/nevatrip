@@ -9,7 +9,7 @@
 
 .card {
   margin: 0 auto;
-  width: 341px;
+  width: 342px;
   border: solid 0.3px #828282;
   border-radius: 16px;
   margin-top: 30px;
@@ -89,8 +89,6 @@
 
 .card__discount {
   margin: 0 auto;
-  width: 317px;
-  height: 40px;
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
@@ -104,7 +102,6 @@
 
 .card__list ul li {
   list-style: none;
-  width: 243px;
   font-size: 14px;
   font-weight: 400;
   color: #4B4B4B;
@@ -118,7 +115,6 @@
 .card__schedule ul {
   margin: 0 auto;
   list-style: none;
-  width: 317px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,12 +162,30 @@
 
 .card__schedule ul button {
   margin-top: 10px;
+  border: none;
   background-color: #FFFFFF;
-  border: solid 0.5px #333333;
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
+  color: #333333;
+  font-size: 14px;
+  width: 63px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
+  background-color: #93beff;
+  border-radius: 11px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.card__schedule ul button:hover {
+  background-color: #D9E8FF;
 }
 
 .card__footer {
@@ -208,13 +222,13 @@
           justify-content: center;
 }
 
-.card__footer__cost :first-child {
+.card__footer__cost .price {
   color: #000000;
   line-height: 20px;
   font-size: 30px;
 }
 
-.card__footer__cost :last-child {
+.card__footer__cost .extra_price {
   font-size: 10px;
   color: #000000;
   line-height: 20px;
