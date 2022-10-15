@@ -110,9 +110,6 @@
                 &:nth-child(n+5){
                     display:none;
                 }
-                &:nth-child(n+5){
-                    display:flex;
-                }
             }
             button{
                 margin-top:10px;
@@ -170,6 +167,11 @@
             color:#404040;
             font-size:14px;
             line-height:20px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover{
+                background-color: #ffcd16;
+            }
         }
     }
 }

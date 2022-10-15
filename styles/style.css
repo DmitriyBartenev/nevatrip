@@ -154,12 +154,6 @@
   display: none;
 }
 
-.card__schedule ul li:nth-child(n+5) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .card__schedule ul button {
   margin-top: 10px;
   border: none;
@@ -243,5 +237,12 @@
   color: #404040;
   font-size: 14px;
   line-height: 20px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.card__footer__button:hover {
+  background-color: #ffcd16;
 }
 /*# sourceMappingURL=style.css.map */
