@@ -52,14 +52,20 @@
                 }
                 :last-child{
                     display: flex;
-                    justify-content: flex-start;
-                    align-items: flex-start;
+                    justify-content: center;
                     ul{
-                        margin-left:10px;
+                        width:300px;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        li{
+                            margin-bottom: 10px;
+                        }
                     }
                     button{
                         margin-top:0;
-                        margin-bottom: 6px;
+                        margin-bottom: 10px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
