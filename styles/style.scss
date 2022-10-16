@@ -5,6 +5,12 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+.close{
+    display: none;
+}
+.open{
+    display: flex !important;
+}
 .card{
     margin:0 auto;
     width:342px;
@@ -62,6 +68,7 @@
         }
     }
     &__discount{
+        padding-left:12px;
         margin:0 auto;
         font-size:14px;
         font-weight: 600;
@@ -87,12 +94,11 @@
     }
     &__schedule{
         ul{
-            margin:0 auto;
-            list-style: none;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-wrap: wrap;
+            margin:0;
             li{
                 width:63px;
                 height:24px;
@@ -108,27 +114,30 @@
                 justify-content: center;
                 align-items: center;
                 &:nth-child(n+5){
-                    display:none;
+                    display: none;
+                }
+                &:nth-child(n+5) .open{
+                    display: block;
                 }
             }
-            button{
-                margin-top:10px;
-                border:none;
-                background-color: #FFFFFF;
-                color:#333333;
-                font-size:14px;
-                width:63px;
-                height:24px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                background-color: #93beff;
-                border-radius: 11px;
-                transition: .2s;
-                &:hover{
-                    background-color: #D9E8FF;
-                }
+        }
+        button{
+            margin-top:10px;
+            border:none;
+            background-color: #FFFFFF;
+            color:#333333;
+            font-size:14px;
+            width:63px;
+            height:24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: #93beff;
+            border-radius: 11px;
+            transition: .2s;
+            &:hover{
+                background-color: #D9E8FF;
             }
         }
     }

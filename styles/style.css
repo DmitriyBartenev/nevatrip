@@ -7,6 +7,16 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.close {
+  display: none;
+}
+
+.open {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .card {
   margin: 0 auto;
   width: 342px;
@@ -88,6 +98,7 @@
 }
 
 .card__discount {
+  padding-left: 12px;
   margin: 0 auto;
   font-size: 14px;
   font-weight: 600;
@@ -113,8 +124,6 @@
 }
 
 .card__schedule ul {
-  margin: 0 auto;
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,6 +135,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0;
 }
 
 .card__schedule ul li {
@@ -154,7 +164,11 @@
   display: none;
 }
 
-.card__schedule ul button {
+.card__schedule ul li:nth-child(n+5) .open {
+  display: block;
+}
+
+.card__schedule button {
   margin-top: 10px;
   border: none;
   background-color: #FFFFFF;
@@ -178,7 +192,7 @@
   transition: .2s;
 }
 
-.card__schedule ul button:hover {
+.card__schedule button:hover {
   background-color: #D9E8FF;
 }
 
