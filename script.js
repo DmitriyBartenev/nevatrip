@@ -4,19 +4,6 @@ var button = document.querySelector('.add_more');
 
 var timeElem = document.querySelector('.time')
 
-/* time.forEach((ul,id) => {
-    var button = ul.appendChild(document.createElement('button'));
-    button.classList.add('add_more');
-    button.innerHTML = 'Ещё...';
-    timeItem.forEach((li) => {
-        button.addEventListener('click', () => {
-            li.classList.add('open');
-            var buttons = document.querySelectorAll('.add_more')
-            buttons.forEach(button => button.remove())
-        })
-    })
-}) */
-
 time.forEach(ul => {
 
     var children = ul.children;
