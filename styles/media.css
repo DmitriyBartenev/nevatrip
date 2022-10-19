@@ -6,7 +6,7 @@
     display: flex;
   }
   .card__img {
-    background-image: url("/assets/saint-petersburg-desktop.png");
+    background-image: url("../assets/saint-petersburg-desktop.png");
     width: 473px;
     height: 369px;
   }
